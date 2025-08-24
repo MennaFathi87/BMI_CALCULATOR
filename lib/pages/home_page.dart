@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:bmiapp/constant/constanst.dart';
 import 'package:bmiapp/pages/result_page.dart';
-import 'package:bmiapp/widgets/jender_container.dart';
+import 'package:bmiapp/widgets/Gender_container.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
           Expanded(
             child: Row(
               children: [
-                JenderContainer(
+                GenderContainer(
                   isFemal: isFemale,
                   textGender: 'Male',
                   onTap: () {
@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
                     });
                   },
                 ),
-                JenderContainer(
+                GenderContainer(
                   isFemal: isFemale,
                   textGender: 'Female',
                   onTap: () {
